@@ -1,5 +1,6 @@
 body {
-    background-image: url("bg.jpg");
+    background-image: url("../img/bg.jpg");
+    background-attachment: fixed;
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,6 +10,21 @@ body {
 #main-header {
     background-color: rgb(51, 51, 51, 0.8);
     color: #ff6666;
+    padding: 1rem;
+}
+
+.header-bg {
+    background-image: url("/assets/img/burger.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    height: 270px;
+    width: 100%;
+}
+
+h1, .lead {
+    text-shadow: 2px 2px 5px grey;
 }
 
 h1, h3, h5 {
@@ -20,7 +36,23 @@ h1, h3, h5 {
     font-family: 'Oswald', sans-serif;
 }
 
-#burger-entry, .left-col, .right-col {
-    background-color: rgb(51, 51, 51, 0.8);
-    color: white;
+#b-entry-cont {
+    text-align: center;
 }
+
+#burger-entry {
+    display: inline-block;
+    background-color: rgb(51, 51, 51, 0.8);
+    border-radius: 8px;
+    padding: 1rem 2rem;
+    margin: 1rem;
+    text-align: left;
+}
+
+.left-col, .right-col {
+    background-color: rgb(51, 51, 51, 0.8);
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem;
+}
+
