@@ -81,19 +81,19 @@ let orm = {
       cb(result);
     });
   },
-  // delete: function(table, condition, cb) {
-  //   let queryString = "DELETE FROM " + table;
-  //   queryString += " WHERE ";
-  //   queryString += condition;
+  delete: function(table, condition, cb) {
+    let queryString = "DELETE FROM " + table;
+    queryString += " WHERE ";
+    queryString += condition;
 
-  //   connection.query(queryString, function(err, result) {
-  //     if (err) {
-  //       throw err;
-  //     }
+    connection.query(queryString, function(err, result) {
+      if (err) {
+        throw err;
+      }
 
-  //     cb(result);
-  //   });
-  // }
+      cb(result);
+    });
+  }
 };
 
 // Export the orm object for the model (burger.js).

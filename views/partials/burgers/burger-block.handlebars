@@ -7,4 +7,10 @@
             DEVOUR
         </button>
     {{/if}}
+
+    {{#unless devoured}}
+        <button type="button" class="btn btn-danger deleteBtn" data-id="{{id}}" data-newdevour="{{devoured}}">
+            DELETE
+        </button>
+    {{/unless}}
 </li>
