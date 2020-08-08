@@ -1,11 +1,9 @@
 <!-- Header -->
 <header>
     <div class="jumbotron jumbotron-fluid" id="main-header">
-    <div class="row justify-content-center">
-        <div class="col-md-6 col-12 header-bg">
-            <h1 class="display-4">Eat-Da-Burger</h1>
-            <p class="lead">An app that let's you virtually devour the burgers you'd like to eat.</p>
-        </div>
+    <div class="head-cont">
+        <h1 class="display-4"><i class="fas fa-hamburger"></i>&nbsp;Eat-Da-Burger</h1>
+        <p class="lead">An app that let's you virtually devour the burgers you'd like to eat.</p>
     </div>
     </div>  
 </header>
@@ -16,7 +14,7 @@
         <h3>What burger would you like to eat today?</h3>
         <form class="create-form">
             <div class="form-group">
-                <input type="text" class="form-control" id="burger-name">
+                <input type="text" class="form-control" id="burgerName">
             </div>
             <button type="submit" class="btn btn-danger">Submit</button>
         </form>
@@ -35,12 +33,7 @@
                 <ul class="list-group list-group-flush">
                     {{#each burgers}}
                         {{#unless devoured}}
-                        <li class="list-group-item justify-content-between">
-                            {{burger_name}}
-                            <button type="button" class="btn btn-warning" id ="devourBtn" data-id="{{id}}" data-newdevour="{{devoured}}">
-                                Devour it!
-                            </button>
-                        </li>
+                            {{> burgers/burger-block devoured=true}}
                         {{/unless}}
                     {{/each}}
                 </ul>
@@ -56,9 +49,7 @@
             <ul class="list-group list-group-flush">
                 {{#each burgers}}
                     {{#if devoured}}
-                    <li class="list-group-item justify-content-between">
-                        {{burger_name}}
-                    </li>
+                        {{> burgers/burger-block devoured=false}}
                     {{/if}}
                 {{/each}}
             </ul>
