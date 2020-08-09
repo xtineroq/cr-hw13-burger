@@ -46,7 +46,7 @@ Please direct all questions to:
 📧 mcroque89@gmail.com
 
 ## Screenshot
-![app-image](/assets/img/eat-burger.png)
+![app-image](../public/assets/img/eat-burger.png)
 
 ## Deployed Application
 [View on Heroku](https://nameless-journey-49380.herokuapp.com/)
