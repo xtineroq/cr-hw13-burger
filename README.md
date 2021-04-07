@@ -47,7 +47,6 @@ Please direct all questions to:
 
 👤 https://github.com/xtineroq
 
-📧 mcroque89@gmail.com
 
 ## Screenshot
 ![app-image](./public/assets/img/eat-burger.png)
